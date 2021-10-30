@@ -4,11 +4,14 @@
   "description": "coding challenge",
   "main": "./src/index.js",
   "scripts": {
-    "start": "node ./src/index.js"
+    "server": "node ./src/index.js",
+    "client": "npm start --prefix client",
+    "start": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "walmex-team",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^6.3.0",
     "express": "^4.17.1",
     "lodash": "^4.17.21"
   }
