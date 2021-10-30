@@ -2,9 +2,9 @@
   "name": "challenge",
   "version": "1.0.0",
   "description": "coding challenge",
-  "main": "./src/index.js",
+  "main": "./server/index.js",
   "scripts": {
-    "server": "node ./src/index.js",
+    "server": "node ./server/index.js",
     "client": "npm start --prefix client",
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "setup": "npm install --prefix client && npm install"

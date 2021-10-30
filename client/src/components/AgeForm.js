@@ -36,10 +36,11 @@ const AgeForm = () => {
 
   return (
     <>
+      <h2>Age Demographic of Users With {item ? item : '___'}</h2>
       <select
         className='form-select'
         aria-label='Default select example'
-        style={{ width: '10%' }}
+        style={{ width: '10%', margin: '10px' }}
         defaultValue=''
         onChange={(e) => {
           setItem(e.currentTarget.value);
